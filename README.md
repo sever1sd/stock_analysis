@@ -31,7 +31,7 @@ The refactoring of code began at this point of the project. A new variable was s
 
 **Setting the Ticker Index to 0 and Main Loop**
 
-A for loop was created to set the variable "tickerIndex" to zero each time the script looped through the data. This was 
+A for loop was created to set the variable "tickerVolume" to zero each time the script looped through the data. This was necessary to prevent unintentional stacking of volumes unrelated to the active 
 
 
 
