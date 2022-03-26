@@ -61,8 +61,15 @@ The script results in the following output charts:
 
 ## Summary
 **Advantages of Refactoring Code**
-  
- It is clear that refactoring code is a key part of the use and creation of scripts. The initial code built for this exercise throughout the course, while functional was substantially slower than the refactored code. 
+
+Refactoring code provides some key advantages. Namely, but cleaning up the code and making it more concise and efficient, the script will take less time and fewer resources to run. It can also make the script easier to read and follow, which is particularly useful if the code is being picked up by someone who is unfamiliar with the project or the coding exercise. 
+ 
+ Additionally, refactoring can help find bugs in the original code. In this project, I personally identified a couple of areas where I had originally coded redundant statements. By refactoring the code provided and reviewing my own code, I realized that I had unnecessary functionality and was able to reduce some components of the script.
+
+A potential disadvantage of refactoring code would be the time it takes for a developr or engineer to evaluate, rewrite, and test the code. While in a classroom setting, this may not have much of an impact. But I could see the time required to refactor being an obstacle in the private sector. 
+    
+ **Pros and Cons of Refactoring original VBA Script**
+ It is clear that refactoring code is a key part of the use and creation of scripts. In relation to this project, refactoring the original code substantially reduced the time for the script to run:
     
  ***The original script timer output:***
 
@@ -84,6 +91,6 @@ The script results in the following output charts:
   
 ![alt text](https://github.com/sever1sd/stock_analysis/blob/e6293ea5b9be4f86a79448f653b80bca8a7dd834/Challenge/Resources/2018%20Refactored%20Stock%20Analysis%20Script.png)
     
- The difference in time to run is fairly substantial. The refactoring of the code reduced the amount of time and resources the script used to run the analysis. While it was only a few seconds in this macro, for larger datasets or analysis the additional speed and lower use of computer memory could make a huge impact.
+ The difference in time to run is fairly substantial. The refactoring of the code reduced the amount of time and resources the script used to run the analysis. While it was only a few seconds in this macro, for larger datasets or analysis the additional speed and lower use of computer memory could make a huge impact. Ultimately, I do not see any disadvantages to refactoring the VBA code for this exercise, other than perhaps the additional time required to do so. Refactoring this code increased the speed at which the script runs, identified bugs, and made the script easier to follow.
     
-**Pros and Cons of Refactoring original VBA Script**
+
