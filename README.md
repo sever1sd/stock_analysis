@@ -85,11 +85,11 @@ A potential disadvantage of refactoring code would be the time it takes for a de
 
   <ins>2017<ins>
 
-![alt text](https://github.com/sever1sd/stock_analysis/blob/e6293ea5b9be4f86a79448f653b80bca8a7dd834/Challenge/Resources/2017%20Refactored%20Stock%20Analysis%20Script.png)
+![alt text](https://github.com/sever1sd/stock_analysis/blob/466ab2d895d1618b7a61304b2f4ca379ea2ea5ca/Challenge/Resources/VBA_Challenge_2017.png)
   
   <ins>2018<ins>
   
-![alt text](https://github.com/sever1sd/stock_analysis/blob/e6293ea5b9be4f86a79448f653b80bca8a7dd834/Challenge/Resources/2018%20Refactored%20Stock%20Analysis%20Script.png)
+![alt text](https://github.com/sever1sd/stock_analysis/blob/466ab2d895d1618b7a61304b2f4ca379ea2ea5ca/Challenge/Resources/VBA_Challenge_2018.png)
     
  The difference in time to run is fairly substantial. The refactoring of the code reduced the amount of time and resources the script used to run the analysis. While it was only a few seconds in this macro, for larger datasets or analysis the additional speed and lower use of computer memory could make a huge impact. Ultimately, I do not see any disadvantages to refactoring the VBA code for this exercise, other than perhaps the additional time required to do so. Refactoring this code increased the speed at which the script runs, identified bugs, and made the script easier to follow.
     
