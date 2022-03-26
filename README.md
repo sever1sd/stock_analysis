@@ -29,7 +29,7 @@ The refactoring of code began at this point of the project. A new variable was s
 
 ![alt text](https://github.com/sever1sd/stock_analysis/blob/5d38201dbd908dda525fc394eb194cd5cef9a8bd/Challenge/Resources/Code%20preps%20loop.png)
 
-**Setting the Ticker Index to 0 and Main Loop**
+**Ticker Volume and Main Loops**
 
 A for loop was created to set the variable "tickerVolume" to zero each time the script looped through the data. This was necessary to prevent unintentional stacking of volumes unrelated to the active ticker in the loop. Then a for loop was established which does most of the heavy lifting for the code. This loop will cycle through each ticker via the "tickerIndex" array and aggregate volume per ticker and establish the starting and ending stock price for the given year. The variable "tickerVolumes" increases the volume of the given ticker, which is established in the loop using the "tickerIndex" array. A series of conditional statements were used to set the starting and ending price of a ticker as well as to increase the "tickerIndex" array by 1 if the loop had cycled through all possible options for the active stock ticker.
 
