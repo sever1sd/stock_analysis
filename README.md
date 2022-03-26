@@ -31,18 +31,59 @@ The refactoring of code began at this point of the project. A new variable was s
 
 **Setting the Ticker Index to 0 and Main Loop**
 
-A for loop was created to set the variable "tickerVolume" to zero each time the script looped through the data. This was necessary to prevent unintentional stacking of volumes unrelated to the active 
+A for loop was created to set the variable "tickerVolume" to zero each time the script looped through the data. This was necessary to prevent unintentional stacking of volumes unrelated to the active ticker in the loop. Then a for loop was established which does most of the heavy lifting for the code. This loop will cycle through each ticker via the "tickerIndex" array and aggregate volume per ticker and establish the starting and ending stock price for the given year. The variable "tickerVolumes" increases the volume of the given ticker, which is established in the loop using the "tickerIndex" array. A series of conditional statements were used to set the starting and ending price of a ticker as well as to increase the "tickerIndex" array by 1 if the loop had cycled through all possible options for the active stock ticker.
 
-
+![alt text](https://github.com/sever1sd/stock_analysis/blob/e6293ea5b9be4f86a79448f653b80bca8a7dd834/Challenge/Resources/Code%20volumes%20Reset%20and%20Main%20loopv1.4.png)
 
 **Output**
 
+A for loop was used to write the results of the main loop onto a sheet within the workbook. The loop fills a cell with the appropriate data based on the tickerIndex array. A calculation is also performed within the loop to identify the rate of return for each ticker. 
+
+![alt text](https://github.com/sever1sd/stock_analysis/blob/e6293ea5b9be4f86a79448f653b80bca8a7dd834/Challenge/Resources/Code%20Output%20loop.png)
+
 **Formatting**
+
+Finally, the script reformats the data to be easier consumption and analysis. A loop is used to apply conditional formatting to the rate of return column to easily identify positive and negative values. This piece of the code was not a part of the refactoring.
+
+![alt text](https://github.com/sever1sd/stock_analysis/blob/e6293ea5b9be4f86a79448f653b80bca8a7dd834/Challenge/Resources/Code%20Formatting.png)
 
 **Final Charts**
 
+The script results in the following output charts:
+
+  <ins>2017<ins>
+  
+![alt text](https://github.com/sever1sd/stock_analysis/blob/e6293ea5b9be4f86a79448f653b80bca8a7dd834/Challenge/Resources/2017%20Stock%20Analysis%20Results.png)
+
+  <ins>2018<ins>
+  
+![alt text](https://github.com/sever1sd/stock_analysis/blob/e6293ea5b9be4f86a79448f653b80bca8a7dd834/Challenge/Resources/2018%20Stock%20Analysis%20Results.png)
 
 ## Summary
 **Advantages of Refactoring Code**
+  
+ It is clear that refactoring code is a key part of the use and creation of scripts. The initial code built for this exercise throughout the course, while functional was substantially slower than the refactored code. 
+    
+ ***The original script timer output:***
 
+  <ins>2017<ins>
+
+![alt text](https://github.com/sever1sd/stock_analysis/blob/e6293ea5b9be4f86a79448f653b80bca8a7dd834/Challenge/Resources/2017%20Original%20Stock%20Analysis%20Script.png)
+  
+  <ins>2018<ins>
+  
+![alt text](https://github.com/sever1sd/stock_analysis/blob/e6293ea5b9be4f86a79448f653b80bca8a7dd834/Challenge/Resources/2018%20Original%20Stock%20Analysis%20Script.png)
+
+ ***The refactored script timer output:***
+
+  <ins>2017<ins>
+
+![alt text](https://github.com/sever1sd/stock_analysis/blob/e6293ea5b9be4f86a79448f653b80bca8a7dd834/Challenge/Resources/2017%20Refactored%20Stock%20Analysis%20Script.png)
+  
+  <ins>2018<ins>
+  
+![alt text](https://github.com/sever1sd/stock_analysis/blob/e6293ea5b9be4f86a79448f653b80bca8a7dd834/Challenge/Resources/2018%20Refactored%20Stock%20Analysis%20Script.png)
+    
+ The difference in time to run is fairly substantial. The refactoring of the code reduced the amount of time and resources the script used to run the analysis. While it was only a few seconds in this macro, for larger datasets or analysis the additional speed and lower use of computer memory could make a huge impact.
+    
 **Pros and Cons of Refactoring original VBA Script**
